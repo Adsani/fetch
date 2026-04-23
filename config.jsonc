@@ -24,63 +24,57 @@
     },
     {
       "type": "title",
-      "key": "{#90}│ {#92}User        {#90}│",
+      "key": "{#90}│ {#92} User      {#90}│",
       "format": "{$1}{user-name}  "
     },
     {
-      "type": "users",
-      "key": "{#90}│ {#92}Users       {#90}│",
-      "myselfOnly": false,
-      "format": "{$1}{1}@{host-name}"
-    },
-    {
       "type": "datetime",
-      "key": "{#90}│ {#92}Datetime    {#90}│",
-      "format": "{$1}{year}-{month-pretty}-{day-in-month} {hour-pretty}:{minute-pretty}:{second-pretty}  {#2}[{weekday}] [W{week}] [UTC{offset-from-utc}]"
+      "key": "{#90}│ {#92} Datetime  {#90}│",
+      "format": "{$1}{year}-{month-pretty}-{day-in-month} {hour-pretty}:{minute-pretty}:{second-pretty} {#2}[UTC{offset-from-utc}]"
     },
     {
       "type": "title",
-      "key": "{#90}│ {#93}Host        {#90}│",
+      "key": "{#90}│ {#93}󰇅 Host      {#90}│",
       "format": "{$1}{host-name}"
     },
     {
       "type": "os",
-      "key": "{#90}│ {#93}OS          {#90}│",
-      "format": "{$1}{?pretty-name}{pretty-name}{?}{/pretty-name}{name}{/} {codename}[{arch}]"
+      "key": "{#90}│ {#93}{icon} OS        {#90}│",
+      "format": "{$1}{?pretty-name}{pretty-name}{?}{/pretty-name}{name}{/} {codename}{#2}[{arch}]"
     },
     {
       "type": "kernel",
-      "key": "{#90}│ {#93}Kernel      {#90}│",
+      "key": "{#90}│ {#93} Kernel    {#90}│",
       "format": "{$1}{sysname} {release}"
     },
     {
       "type": "uptime",
-      "key": "{#90}│ {#93}Uptime      {#90}│",
+      "key": "{#90}│ {#93}󰅐 Uptime    {#90}│",
       "format": "{$1}{?days}{days} Days + {?}{hours}:{minutes}:{seconds}"
     },
     {
       "type": "cpu",
-      "key": "{#90}│ {#91}CPU         {#90}│",
+      "key": "{#90}│ {#91}󰍛 CPU       {#90}│",
       "showPeCoreCount": true,
       "temp": true,
-      "format": "{$1}{name}  {#2}[C:{core-types}] [{freq-max}]"
+      "format": "{$1}{name}  {#2}[{cores-physical}C/{cores-logical}T] [{freq-max}]"
     },
     {
       "type": "gpu",
-      "key": "{#90}│ {#91}GPU         {#90}│",
+      "key": "{#90}│ {#91}󰢮 GPU       {#90}│",
       "detectionMethod": "auto",
       "driverSpecific": true,
-      "format": "{$1}{name}  {#2}[C:{core-count}]{?frequency} [{frequency}]{?} {#2}[{type}]"
+      "format": "{$1}{name}  {#2}{?frequency} [{frequency}]{?} {#2}[{type}]"
     },
     {
       "type": "memory",
-      "key": "{#90}│ {#91}Memory      {#90}│",
+      "key": "{#90}│ {#91} Memory    {#90}│",
       "format": "{$1}{used} / {total} ({percentage})"
     },
     {
       "type": "disk",
-      "key": "{#90}│ {#91}Disk        {#90}│",
-      "format": "{$1}{size-used} / {size-total} ({size-percentage})"
+      "key": "{#90}│ {#91}󰉉 Disk      {#90}│",
+      "format": "{$1}{size-used} / {size-total} ({size-percentage}) {#2}[{mountpoint}]"
     },
     {
       "type": "poweradapter",
@@ -89,18 +83,18 @@
     },
     {
       "type": "terminal",
-      "key": "{#90}│ {#95}Terminal    {#90}│",
-      "format": "{$1}{pretty-name}  {#2}[{version}] ]"
+      "key": "{#90}│ {#95} Terminal  {#90}│",
+      "format": "{$1}{pretty-name}  {#2}[v{version}]"
     },
     {
       "type": "terminalfont",
-      "key": "{#90}│ {#95}Font        {#90}│",
+      "key": "{#90}│ {#95} Font      {#90}│",
       "format": "{$1}{name}  {#2}[{size}]"
     },
     {
       "type": "shell",
-      "key": "{#90}│ {#95}Shell       {#90}│",
-      "format": "{$1}{pretty-name}  {#2}[v{version}] ]"
+      "key": "{#90}│ {#95} Shell     {#90}│",
+      "format": "{$1}{pretty-name}  {#2}[v{version}]"
     },
     // CUSTOM - Button UI bar
     {
@@ -117,7 +111,7 @@
     {
       "type": "custom",
       // "format": "{#90}│ {#90}  {#31}  {#32}  {#33}  {#34}  {#35}  {#36}  {#37}  {#38}  {#39}       {#38}  {#37}  {#36}  {#35}  {#34}  {#33}  {#32}  {#31}  {#90}             {#90}│"
-      "format": "{#90}│ {#37}󰮯  {#97}󰊠 {#36}󰊠 {#96}󰊠 {#35}󰊠 {#95}󰊠 {#34}󰊠 {#94}󰊠 {#33}󰊠 {#93}󰊠 {#32}󰊠 {#92}󰊠 {#31}󰊠 {#91}󰊠 {#30}󰊠 {#90}󰊠  {#90}                                        │"
+      "format": "{#90}│ {#37}󰮯 ............ {#97}󰊠 {#36}󰊠 {#96}󰊠 {#35}󰊠 {#95}󰊠 {#34}󰊠 {#94}󰊠 {#33}󰊠 {#93}󰊠 {#32}󰊠 {#92}󰊠 {#31}󰊠 {#91}󰊠 {#30}󰊠 {#90}󰊠  {#90}                            │"
     },
     {
       "type": "custom",
